@@ -1,0 +1,9 @@
+/* styles.css */
+
+/* Style for the image */
+.puppy-image {
+    max-width: 25%; /* Stay inside container */
+    height: auto; /* Maintain the image size */
+    display: block; /* Remove extra spacing around the image. */
+    margin: 0 auto; /* Center the image horizontally */
+}
