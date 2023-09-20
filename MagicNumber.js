@@ -9,6 +9,17 @@ do {
 // Parse the input as an integer
 userNumber = parseInt(userNumber);
 
+// Function to validate if input is a valid whole number
+function isValidNumber(input) {
+    if (/^\d+$/.test(input)) {
+        return true;
+    } else {
+        // Display an error message to the user
+        alert("Invalid input. Please enter a valid whole number.");
+        return false;
+    }
+}
+
 // Perform the magic number trick
 var step1 = userNumber + 9;
 var step2 = step1 * 2;
@@ -28,8 +39,3 @@ document.write("</ul>");
 
 // Display the final result using an alert
 alert("Your final number is: " + finalNumber);
-
-// Function to validate if input is a valid whole number
-function isValidNumber(input) {
-    return /^\d+$/.test(input);
-}
